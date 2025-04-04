@@ -1,0 +1,145 @@
+[
+    {
+        "id": "1.0",
+        "label": "Home",
+        "icon": "far fa-home",
+        "urlType": "Relative",
+        "url": "/hcs/index.html",
+        "target": "_self"
+    },
+    {
+        "id": "2.0",
+        "label": "My Content",
+        "icon": "far fa-user",
+        "urlType": "None",
+        "target": "_self",
+        "items": [
+            {
+                "id": "2.1",
+                "label": "Documents by Group",
+                "url": "/hcs/documentsByGroup.html",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "id": "2.2",
+                "label": "My Favorites",
+                "url": "/hcs/userFavorites.html",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "separator": true
+            },
+            {
+                "id": "2.3",
+                "label": "My Applications",
+                "url": "/hcs/index.html",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "id": "2.4",
+                "label": "All Appications",
+                "url": "/hcs/allApps.html",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "separator": true
+            },
+            {
+                "id": "2.6",
+                "label": "Change my password...",
+                "url": "https://password.ny.gov",
+                "urlType": "Absolute",
+                "target": "_self"
+            },
+            {
+                "id": "2.8",
+                "label": "Change my secrect questions...",
+                "url": "https://password.ny.gov",
+                "urlType": "Absolute",
+                "target": "_self"
+            },
+            {
+                "id": "2.9",
+                "label": "Report my user ID or password stolen",
+                "url": "/hpn/cgi-bin/applinks/comments/gencomments?vars=hinhpn&subj1=Commerce+Contact+Page&subj2=CAMU",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "id": "2.10",
+                "label": "Learn more about HCS security",
+                "url": "HCSRestServices/HCSContentServices/docs?docPath=/hcs_Documents/Source/hpn/accnts/document_2_saup.pdf",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "separator": true
+            },
+            {
+                "id": "2.11",
+                "label": "Change my contact information...",
+                "url": "/doh2/applinks/comdir/personupdate/?self=T",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "id": "2.12",
+                "label": "Look up my coordinators",
+                "url": "/hpn/cgi-bin/applinks/comdir/hcscoord.cgi",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "id": "2.13",
+                "label": "See what roles I hold",
+                "url": "/hpn/cgi-bin/applinks/comdir/lookup?input=1",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "id": "2.14",
+                "label": "Look up my PIN",
+                "url": "/hpn/cgi-bin/applinks/general/mypin.cgi",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "separator": true
+            },
+            {
+                "id": "2.15",
+                "label": "See what organizations I am affliated with",
+                "url": "/hpn/cgi-bin/applinks/comdir/idsearch",
+                "urlType": "Relative",
+                "target": "_self"
+            },
+            {
+                "id": "2.16",
+                "label": "See the IHANS notification lists I am on",
+                "url": "/hpn/cgi-bin/applinks/comdir/persupd1?func=show_lists",
+                "urlType": "Relative",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "id": "3.0",
+        "label": "Search",
+        "icon": "far fa-search",
+        "url": "/hcs/advancedSearch.html",
+        "urlType": "Relative",
+        "target": "_self"
+    },
+    {
+        "id": "5.0",
+        "label": "Log Out",
+        "icon": "far fa-sign-out",
+        "url": "/pages/cpwd/ggc.cgi",
+        "urlType": "Relative",
+        "target": "_self"
+    }
+]

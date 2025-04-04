@@ -1,0 +1,146 @@
+.text-orientation {
+  font: bold 25px/45px "Oswald-Bold", Sans-serif !important;
+  display: list-item !important;
+  color: crimson !important;
+  position: absolute !important;
+  top: 9px;
+  left: 0;
+}
+
+.topbar {
+  background-color: #523178;
+  height: 4em;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.topbar-dev {
+  background-color: #ecb941;
+  height: 4em;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.topbar-eval {
+  background-color: #888b8d;
+  height: 4em;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+.topbar-uat {
+  background-color: #1b2a5e;
+  height: 4em;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.menus-bar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  height: 100%;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: ProximaNovaRegular, Arial, sans-serif;
+}
+#mycontent {
+  width: 300px !important;
+}
+
+.appname {
+  margin-left: 3.5em;
+  display: flex;
+}
+
+.logo {
+  margin-left: 5.5em;
+  align-items: center;
+  margin-top: 0.5em;
+  display: flex;
+  gap: 0.5em;
+}
+.menus {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 2em;
+}
+.link {
+  margin-right: 1em;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.link > span {
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.link > .menu-list {
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  display: none;
+  z-index: 2 !important;
+}
+
+.collapse {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .topbar {
+    position: fixed;
+    bottom: 0;
+    top: unset;
+  }
+  .topbar-eval {
+    position: fixed;
+    bottom: 0;
+    top: unset;
+  }
+  .topbar-uat {
+    position: fixed;
+    bottom: 0;
+    top: unset;
+  }
+  .topbar-dev {
+    position: fixed;
+    bottom: 0;
+    top: unset;
+  }
+  .logo {
+    display: none;
+  }
+  .collapse {
+    display: block;
+    font-size: 18px;
+    margin-left: 1em;
+  }
+  .menus-bar {
+    justify-content: space-between;
+  }
+  .link > .menu-list {
+    position: absolute;
+    bottom: 2.4em !important;
+    top: unset !important;
+    left: -42px;
+    display: none;
+    z-index: 2 !important;
+  }
+}
+
+.topbar-logo {
+  cursor: pointer;
+}

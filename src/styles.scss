@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.p-panelmenu .p-panelmenu-panel .p-panelmenu-header > a {
+    border-radius: 0;
+    border: none !important;
+}
+
+// REMOVES BG COLOR MILD WHITE
+
+.p-panelmenu .p-panelmenu-header > a {
+    padding: 1rem;
+    border: none !important;
+    color: white !important;
+    background: rgb(82,49,120) !important;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: box-shadow 0.2s;
+}
+// .p-panelmenu .p-panelmenu-panel {
+//     padding: 12px 0px !important;
+// }
+.p-menu {
+    padding: 0 !important;
+    background: #ffffff;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-radius: 2px !important;
+    width: auto !important;
+    min-width: 120px !important;
+    margin-top: 1.2em !important;
+    box-shadow: 0px 0px 1px 0px rgb(0 0 0 / 20%) !important;
+    font-size: 14px !important;
+    overflow-y: auto !important;
+}
+
+// SUB MENU BORDER AND BG COLOR
+
+.p-panelmenu .p-panelmenu-content {
+    padding: 0.25rem 0 !important;
+     border: none !important;
+    background: #ffffff !important;
+    color: #495057 !important;
+    margin-bottom: 0 !important;
+    border-top: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+.p-panelmenu .p-panelmenu-header > a:focus {
+    box-shadow: none !important;
+ }
+ .alignItem{
+    padding: 0 5px !important;
+}
+ 
+
+
+// HOVER COLORS
+
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover {
+    background: #3872ad73 !important;
+}
+
+.p-panelmenu .p-panelmenu-panel .p-panelmenu-content {
+   
+    border: 1px solid #d5d5d5 !important;
+    color: #fff !important;
+    background: #523178 !important;
+}
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-menuitem-text {
+    color: white !important;
+}
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-menuitem-icon {
+    color: white !important;
+    
+}
+
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link {
+  
+    color: white !important;
+   
+}
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link {
+    padding: 12px 24px !important;
+   
+}
+
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover {
+    background: black !important;
+    color: white !important;
+}

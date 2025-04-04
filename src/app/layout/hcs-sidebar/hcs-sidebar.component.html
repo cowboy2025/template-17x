@@ -1,0 +1,28 @@
+<div *ngIf="!mobileView; else loadMobileView" id="sidebar" class="sidebar">
+    <div class="sidebar-container">
+        <p-panelMenu class="panelMenu" [transitionOptions]="'0ms'" [model]="menus"></p-panelMenu>
+    </div>
+    <div *ngIf="expanded" class="toggle" (click)="updateMenuView()"> <i class="fal fa-angle-double-left"></i> Collapse
+        Sidebar
+    </div>
+    <div *ngIf="!expanded" class="toggle" (click)="updateMenuView()"> <i class=" toggle fal fa-angle-double-right"></i>
+    </div>
+</div>
+
+
+<ng-template #loadMobileView>
+    <div class="mobile-menu" (click)="mobileMenuToggle()">
+        <div *ngIf="isExpandMobileMenu">
+            <i class="fas fa-chevron-double-up"></i>
+        </div>
+        <div *ngIf="!isExpandMobileMenu">
+            <i class="fas fa-chevron-double-down"></i>
+        </div>
+    </div>
+    <div *ngIf="isExpandMobileMenu" id="sidebar" class="mobileSidebar ">
+        <div class="sidebar-container">
+            <p-panelMenu class="panelMenu" id="closeMenuStyle" [transitionOptions]="'0ms'"
+                [model]="menus"></p-panelMenu>
+        </div>
+    </div>
+</ng-template>

@@ -1,0 +1,46 @@
+<div [ngClass]="{'topbar-dev': (environment == 'DEV' || environment == 'LOCAL'), 'topbar-eval': environment == 'EVAL' ,
+                 'topbar-uat': environment == 'UAT', 'topbar': environment == 'PROD'}">
+    <div class="menus-bar">
+
+        <div class="logo">
+
+            <h2 class="text-orientation" *ngIf="environment!='PROD'">{{mobileView ?'': environment}}</h2>
+            <img src="assets/images/hcs-bar-bootstrap-white.png" alt="hcs logo" (click)="homeHCS()"
+                class="topbar-logo" />
+
+            <div class="appname">
+                <h3> {{appTiltle}} </h3>
+            </div>
+        </div>
+
+        <div class="collapse" (click)="toggle()"><i class="fal fa-bars"></i> </div>
+        <div class="menus">
+            <div class="link">
+                <span (click)="homeHCS()">
+                    <span class="fal fa-home"></span> <span class="alignItem"> {{mobileView ? ''
+                        : 'Home'}}</span>
+                </span>
+            </div>
+            <div class="link">
+                <span class="fal fa-user"></span> <span class="alignItem" (click)="showMenu('mycontent')">{{mobileView ?
+                    '' : 'My Content'}}</span> <p-menu id="mycontent" class="menu-list" [model]="myContent"></p-menu>
+                <span class=" pi pi-fw pi-angle-down" (click)="showMenu('mycontent')"> </span>
+            </div>
+            <div class="link">
+                <span (click)="searchHCS()"><span class="fal fa-search"></span> <span class="alignItem">{{mobileView ?
+                        '' : 'Search'}} </span> </span>
+
+            </div>
+            <div class="link">
+                <span class="fal fa-life-ring"></span><span class="alignItem" (click)="onHelp()">{{mobileView ?
+                    '' : 'Help'}}</span>
+            </div>
+            <div class="link">
+                <span (click)="logoutHCS()"><span class="fal fa-sign-out"></span><span class="alignItem"> {{mobileView ?
+                        '' : 'Log out'}}</span> </span>
+
+            </div>
+        </div>
+
+    </div>
+</div>

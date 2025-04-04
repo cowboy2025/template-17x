@@ -1,0 +1,136 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  background-color: #523178;
+  color: white;
+  height: 94%;
+  width: 7em;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  font-weight: 500;
+  // margin-top: 1em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  justify-content: space-between;
+  transition: all 0.5s;
+  border-top: 1px #523178;
+  top: 4em;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin-top: 2em;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+ul > li {
+  width: 100%;
+  display: flex;
+  height: 1.5em;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+}
+
+ul > li:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.toggle {
+  align-self: center;
+  width: 85%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+::ng-deep
+  .p-panelmenu
+  .p-panelmenu-header:not(.p-highlight):not(.p-disabled)
+  > a:hover {
+  background: black !important;
+  border-color: 1px solid #dee2e6;
+  color: white;
+}
+
+:host
+  ::ng-deep
+  .p-panelmenu
+  .p-panelmenu-header.p-highlight:not(.p-disabled)
+  > a:hover {
+  background: black !important;
+}
+
+:host ::ng-deep {
+  .p-panelmenu .p-menuitem-link-active {
+    background-color: #ffcc66 !important;
+  }
+  .p-panelmenu-panel {
+    padding-top: 5px;
+  }
+}
+
+.sidebar-container {
+  margin-top: -10px;
+}
+
+.mobileSidebar {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  background-color: #523178;
+  transition: all 0.2s;
+  z-index: 3 !important;
+}
+
+.mobileSidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.mobile-menu {
+  background: #523178b0;
+  color: #fff !important;
+  padding-left: 20px;
+  font-size: 18px;
+  height: 40px;
+  margin-bottom: 5px;
+  line-height: 44px;
+  margin-top: -10px;
+}
+
+.sidebar-container {
+  margin-top: -5px;
+  width: 100%;
+  background: #523178;
+}
+.mobileSidebar {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  background-color: #523178;
+  transition: all 0.2s;
+  z-index: 3 !important;
+}
+.mobileSidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.mobile-menu {
+  background: #523178b0;
+  color: #fff !important;
+  padding-left: 20px;
+  font-size: 18px;
+  height: 40px;
+  margin-bottom: 5px;
+  line-height: 44px;
+  margin-top: -10px;
+}
